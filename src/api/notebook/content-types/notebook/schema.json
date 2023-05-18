@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notebooks",
+  "info": {
+    "singularName": "notebook",
+    "pluralName": "notebooks",
+    "displayName": "Notebook",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notebook_name": {
+      "type": "string"
+    },
+    "notebook_desc": {
+      "type": "string"
+    },
+    "notebook_slug": {
+      "type": "uid",
+      "targetField": "notebook_name"
+    },
+    "notebook_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "notebook_media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "private": {
+      "type": "boolean"
+    },
+    "created_date": {
+      "type": "datetime"
+    },
+    "last_updated": {
+      "type": "datetime"
+    }
+  }
+}

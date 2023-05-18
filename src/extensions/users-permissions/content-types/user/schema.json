@@ -65,6 +65,12 @@
     },
     "name": {
       "type": "string"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "User"
     }
   }
 }

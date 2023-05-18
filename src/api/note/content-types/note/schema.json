@@ -4,7 +4,8 @@
   "info": {
     "singularName": "note",
     "pluralName": "notes",
-    "displayName": "notes"
+    "displayName": "Notes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,15 @@
     },
     "note_secured": {
       "type": "boolean"
+    },
+    "User": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "notes"
+    },
+    "tags": {
+      "type": "string"
     }
   }
 }
