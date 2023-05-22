@@ -10,7 +10,7 @@ export default ({ env }) => ({
         user: env('DATABASE_USERNAME'), 
         password: env('DATABASE_PASSWORD'),
         ssl: {
-          ca: env('DATABASE_SSL_CA'),
+          ca: env("DATABASE_CA", ""),
         },
       },
       debug: false,
