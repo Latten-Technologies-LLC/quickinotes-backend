@@ -11,6 +11,7 @@ export default ({ env }) => ({
         password: env('DATABASE_PASSWORD'),
         ssl: {
           ca: env("DATABASE_CA", ""),
+          
         },
       },
       debug: false,
