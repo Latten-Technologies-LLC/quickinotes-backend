@@ -52,6 +52,12 @@
     },
     "last_updated": {
       "type": "datetime"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "notebook"
     }
   }
 }

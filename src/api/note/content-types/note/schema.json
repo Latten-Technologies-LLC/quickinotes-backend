@@ -30,7 +30,7 @@
     "note_secured": {
       "type": "boolean"
     },
-    "User": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
@@ -38,6 +38,19 @@
     },
     "tags": {
       "type": "string"
+    },
+    "bookmarked": {
+      "type": "boolean"
+    },
+    "notebook": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::notebook.notebook",
+      "inversedBy": "notes"
+    },
+    "draft": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
