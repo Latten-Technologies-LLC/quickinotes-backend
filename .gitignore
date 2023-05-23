@@ -113,3 +113,5 @@ exports
 dist
 build
 .strapi-updater.json
+config/env/production/database.ts
+config/env/production/server.ts
