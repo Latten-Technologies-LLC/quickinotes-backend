@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -71,6 +70,10 @@
       "relation": "oneToMany",
       "target": "api::note.note",
       "mappedBy": "user"
+    },
+    "hide_ads": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
